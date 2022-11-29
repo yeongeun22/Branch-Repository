@@ -1,0 +1,85 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPMT/z8CBaYlQQnaWRdfoEp",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/yeongeun22/Branch-Repository/blob/main/commit\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "id": "osrMyGrcnZtk"
+      },
+      "outputs": [],
+      "source": [
+        "from google.colab import drive"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "drive.mount('/gdrive', force_remount=True)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UPbDzolZnhLv",
+        "outputId": "fb672865-d4c5-48b2-c8d0-b76fe8f4292b"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Mounted at /gdrive\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "with open('/gdrive/My Drive/test.txt', 'w') as f:\n",
+        "  f.writelines(\"Hello Google Colab!\")\n"
+      ],
+      "metadata": {
+        "id": "n_OWOJchn05i"
+      },
+      "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "hnTvsldbn1W8"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
